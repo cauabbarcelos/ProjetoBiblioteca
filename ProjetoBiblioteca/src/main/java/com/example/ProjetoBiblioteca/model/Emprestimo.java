@@ -34,7 +34,7 @@ public class Emprestimo {
     // DIAS DE ATRASO X VALOR POR DIA
 
     @Column(precision = 10, scale = 2 )
-    private BigDecimal mula =  BigDecimal.ZERO;
+    private BigDecimal multa =  BigDecimal.ZERO;
 
 
 
