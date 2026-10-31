@@ -10,6 +10,6 @@ public record CategoriaRequest(
         String nameLivro,
 
         @Size(max = 250 , message = "Descricao no maximo 250 caracteres ")
-        String descrica)
+        String descricao)
    {
 }

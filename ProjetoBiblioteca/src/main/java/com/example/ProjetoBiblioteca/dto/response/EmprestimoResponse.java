@@ -6,7 +6,6 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public record EmprestimoResponse(
-
         Long id,
         Long usuarioId,
         String usuarioNome,

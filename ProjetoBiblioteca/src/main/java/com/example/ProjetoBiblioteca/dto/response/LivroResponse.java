@@ -3,6 +3,7 @@ package com.example.ProjetoBiblioteca.dto.response;
 import java.util.List;
 
 public record LivroResponse(
+
         Long id,
         String titulo,
         String isbn,
