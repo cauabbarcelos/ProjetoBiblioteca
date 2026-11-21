@@ -10,6 +10,7 @@ public class CategoriaMapper {
 
 
     // CategoriaRequest -> Categoria (para salvar um registro novo)
+
     public Categoria toEntity(CategoriaRequest request) {
         Categoria categoria = new Categoria();
         updateEntity(categoria, request);
@@ -17,6 +18,7 @@ public class CategoriaMapper {
     }
 
     // Copia os dados do request para uma categoria que já existe (usado no PUT)
+
     public void updateEntity(Categoria categoria, CategoriaRequest request) {
         categoria.setNome(request.nameLivro());
         categoria.setDescricao(request.descricao());

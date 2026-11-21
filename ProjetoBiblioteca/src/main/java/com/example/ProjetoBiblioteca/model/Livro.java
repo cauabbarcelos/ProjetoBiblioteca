@@ -13,6 +13,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Entity
+
 public class Livro {
 
     @Id
@@ -20,7 +21,7 @@ public class Livro {
     private Long id;
 
     @Column(nullable = false)
-    private String nome;
+    private String titulo;
 
     @Column(unique = true)
     private String isbn;

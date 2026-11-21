@@ -8,7 +8,7 @@ public record  LivroRequest (
 
         @NotBlank(message = "Titulo é obrigatorio")
         @Size(max = 150 , message = "O Titulo do livro deve ter no maximo 150 caracteres")
-        String nomeLivro,
+        String tituloLivro,
 
         @Size(max = 50 , message = "O isbn deve ter no maximo 50 caracteres")
         String isbnLivro,

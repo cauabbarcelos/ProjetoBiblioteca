@@ -1,7 +1,5 @@
 package com.example.ProjetoBiblioteca.dto.response;
 
-import com.example.ProjetoBiblioteca.model.enums.StatusEmprestimo;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
@@ -13,7 +11,5 @@ public record EmprestimoResponse(
         String livroTitulo,
         LocalDate dataEmprestimo,
         LocalDate dataPrevistaDevolucao,
-        LocalDate dataDevolucao,
-        StatusEmprestimo status,
         BigDecimal multa) {
 }
