@@ -1,0 +1,1932 @@
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..df9bbfb
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,11 @@
++# IDE
++.idea/
++*.iml
++.vscode/
++
++# Build
++target/
++
++# Sistema
++.DS_Store
++Thumbs.db
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+index ab1f416..0000000
+--- a/.idea/.gitignore
++++ /dev/null
+@@ -1,10 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Ignored default folder with query files
+-/queries/
+-# Datasource local storage ignored files
+-/dataSources/
+-/dataSources.local.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+diff --git a/.idea/ProjetoBiblioteca.iml b/.idea/ProjetoBiblioteca.iml
+deleted file mode 100644
+index 6054576..0000000
+--- a/.idea/ProjetoBiblioteca.iml
++++ /dev/null
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module version="4">
+-  <component name="AdditionalModuleElements">
+-    <content url="file://$MODULE_DIR$" />
+-  </component>
+-</module>
+\ No newline at end of file
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+deleted file mode 100644
+index 78942bd..0000000
+--- a/.idea/compiler.xml
++++ /dev/null
+@@ -1,26 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="CompilerConfiguration">
+-    <annotationProcessing>
+-      <profile name="Maven default annotation processors profile" enabled="true">
+-        <sourceOutputDir name="target/generated-sources/annotations" />
+-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+-        <outputRelativeToContentRoot value="true" />
+-      </profile>
+-      <profile name="Annotation profile for ProjetoBiblioteca" enabled="true">
+-        <sourceOutputDir name="target/generated-sources/annotations" />
+-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+-        <outputRelativeToContentRoot value="true" />
+-        <processorPath useClasspath="false">
+-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+-        </processorPath>
+-        <module name="ProjetoBiblioteca" />
+-      </profile>
+-    </annotationProcessing>
+-  </component>
+-  <component name="JavacSettings">
+-    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+-      <module name="ProjetoBiblioteca" options="-parameters" />
+-    </option>
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+deleted file mode 100644
+index e43bb07..0000000
+--- a/.idea/encodings.xml
++++ /dev/null
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Encoding">
+-    <file url="file://$PROJECT_DIR$/ProjetoBiblioteca/src/main/java" charset="UTF-8" />
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+deleted file mode 100644
+index 712ab9d..0000000
+--- a/.idea/jarRepositories.xml
++++ /dev/null
+@@ -1,20 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="RemoteRepositoriesConfiguration">
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Central Repository" />
+-      <option name="url" value="https://repo.maven.apache.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Maven Central repository" />
+-      <option name="url" value="https://repo1.maven.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="jboss.community" />
+-      <option name="name" value="JBoss Community repository" />
+-      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+-    </remote-repository>
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+index 9421aaf..0000000
+--- a/.idea/misc.xml
++++ /dev/null
+@@ -1,14 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="MavenProjectsManager">
+-    <option name="originalFiles">
+-      <list>
+-        <option value="$PROJECT_DIR$/ProjetoBiblioteca/pom.xml" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" default="true" project-jdk-name="openjdk-25" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+index 058af39..0000000
+--- a/.idea/modules.xml
++++ /dev/null
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/ProjetoBiblioteca.iml" filepath="$PROJECT_DIR$/.idea/ProjetoBiblioteca.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+deleted file mode 100644
+index 94a25f7..0000000
+--- a/.idea/vcs.xml
++++ /dev/null
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-  </component>
+-</project>
+\ No newline at end of file
+diff --git a/ProjetoBiblioteca/.dockerignore b/ProjetoBiblioteca/.dockerignore
+new file mode 100644
+index 0000000..7653ac2
+--- /dev/null
++++ b/ProjetoBiblioteca/.dockerignore
+@@ -0,0 +1,5 @@
++target/
++.idea/
++.git/
++*.iml
++HELP.md
+diff --git a/ProjetoBiblioteca/.mvn/wrapper/maven-wrapper.properties b/ProjetoBiblioteca/.mvn/wrapper/maven-wrapper.properties
+index bb58b3c..c0bcafe 100644
+--- a/ProjetoBiblioteca/.mvn/wrapper/maven-wrapper.properties
++++ b/ProjetoBiblioteca/.mvn/wrapper/maven-wrapper.properties
+@@ -1,3 +1,3 @@
+ wrapperVersion=3.3.4
+ distributionType=only-script
+-distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.10.0/apache-maven-3.10.0-bin.zip
++distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.11/apache-maven-3.9.11-bin.zip
+diff --git a/ProjetoBiblioteca/Dockerfile b/ProjetoBiblioteca/Dockerfile
+new file mode 100644
+index 0000000..be6d057
+--- /dev/null
++++ b/ProjetoBiblioteca/Dockerfile
+@@ -0,0 +1,21 @@
++# ---------- Etapa 1: build ----------
++FROM eclipse-temurin:25-jdk AS build
++WORKDIR /app
++
++# Copia só o necessário para baixar as dependências (aproveita o cache do Docker)
++COPY .mvn .mvn
++COPY mvnw pom.xml ./
++RUN chmod +x mvnw && ./mvnw -q dependency:go-offline
++
++# Copia o código e gera o .jar
++COPY src src
++RUN ./mvnw -q package -DskipTests
++
++# ---------- Etapa 2: execução ----------
++FROM eclipse-temurin:25-jre
++WORKDIR /app
++
++COPY --from=build /app/target/*.jar app.jar
++
++EXPOSE 8080
++ENTRYPOINT ["java", "-jar", "app.jar"]
+diff --git a/ProjetoBiblioteca/pom.xml b/ProjetoBiblioteca/pom.xml
+index b9bcad5..019324d 100644
+--- a/ProjetoBiblioteca/pom.xml
++++ b/ProjetoBiblioteca/pom.xml
+@@ -11,21 +11,8 @@
+ 	<groupId>com.example</groupId>
+ 	<artifactId>ProjetoBiblioteca</artifactId>
+ 	<version>0.0.1-SNAPSHOT</version>
+-	<name/>
+-	<description/>
+-	<url/>
+-	<licenses>
+-		<license/>
+-	</licenses>
+-	<developers>
+-		<developer/>
+-	</developers>
+-	<scm>
+-		<connection/>
+-		<developerConnection/>
+-		<tag/>
+-		<url/>
+-	</scm>
++	<name>ProjetoBiblioteca</name>
++	<description>API REST de gerenciamento de biblioteca</description>
+ 	<properties>
+ 		<java.version>25</java.version>
+ 	</properties>
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/ProjetoBibliotecaApplication.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/ProjetoBibliotecaApplication.java
+index 8e1d59c..1e8baa3 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/ProjetoBibliotecaApplication.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/ProjetoBibliotecaApplication.java
+@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
+ import org.springframework.boot.autoconfigure.SpringBootApplication;
+ 
+ @SpringBootApplication
+-public class  ProjetoBibliotecaApplication {
++public class ProjetoBibliotecaApplication {
+ 
+ 	public static void main(String[] args) {
+ 		SpringApplication.run(ProjetoBibliotecaApplication.class, args);
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/AutorController.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/AutorController.java
+index 56052b3..efa1b4b 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/AutorController.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/AutorController.java
+@@ -1,5 +1,49 @@
+ package com.example.ProjetoBiblioteca.controller;
+ 
++import com.example.ProjetoBiblioteca.dto.request.AutorRequest;
++import com.example.ProjetoBiblioteca.dto.response.AutorResponse;
++import com.example.ProjetoBiblioteca.service.AutorService;
++import jakarta.validation.Valid;
++import lombok.RequiredArgsConstructor;
++import org.springframework.data.domain.Page;
++import org.springframework.data.domain.Pageable;
++import org.springframework.http.HttpStatus;
++import org.springframework.http.ResponseEntity;
++import org.springframework.web.bind.annotation.*;
++
++@RestController
++@RequestMapping("/autores")
++@RequiredArgsConstructor
+ public class AutorController {
+ 
++    private final AutorService service;
++
++    @PostMapping
++    public ResponseEntity<AutorResponse> criar(@Valid @RequestBody AutorRequest request) {
++        return ResponseEntity.status(HttpStatus.CREATED).body(service.criar(request));
++    }
++
++    // GET /autores?nome=...&page=0&size=10&sort=nome,asc
++    @GetMapping
++    public Page<AutorResponse> listar(@RequestParam(required = false) String nome,
++                                   Pageable pageable) {
++        return service.listar(nome, pageable);
++    }
++
++    @GetMapping("/{id}")
++    public AutorResponse buscarPorId(@PathVariable Long id) {
++        return service.buscarPorId(id);
++    }
++
++    @PutMapping("/{id}")
++    public AutorResponse atualizar(@PathVariable Long id,
++                                 @Valid @RequestBody AutorRequest request) {
++        return service.atualizar(id, request);
++    }
++
++    @DeleteMapping("/{id}")
++    public ResponseEntity<Void> deletar(@PathVariable Long id) {
++        service.deletar(id);
++        return ResponseEntity.noContent().build();
++    }
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/CategoriaController.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/CategoriaController.java
+index 298f3d6..4e50dca 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/CategoriaController.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/CategoriaController.java
+@@ -1,4 +1,49 @@
+ package com.example.ProjetoBiblioteca.controller;
+ 
++import com.example.ProjetoBiblioteca.dto.request.CategoriaRequest;
++import com.example.ProjetoBiblioteca.dto.response.CategoriaResponse;
++import com.example.ProjetoBiblioteca.service.CategoriaService;
++import jakarta.validation.Valid;
++import lombok.RequiredArgsConstructor;
++import org.springframework.data.domain.Page;
++import org.springframework.data.domain.Pageable;
++import org.springframework.http.HttpStatus;
++import org.springframework.http.ResponseEntity;
++import org.springframework.web.bind.annotation.*;
++
++@RestController
++@RequestMapping("/categorias")
++@RequiredArgsConstructor
+ public class CategoriaController {
++
++    private final CategoriaService service;
++
++    @PostMapping
++    public ResponseEntity<CategoriaResponse> criar(@Valid @RequestBody CategoriaRequest request) {
++        return ResponseEntity.status(HttpStatus.CREATED).body(service.criar(request));
++    }
++
++    // GET /categorias?nome=...&page=0&size=10&sort=nome,asc
++    @GetMapping
++    public Page<CategoriaResponse> listar(@RequestParam(required = false) String nome,
++                                   Pageable pageable) {
++        return service.listar(nome, pageable);
++    }
++
++    @GetMapping("/{id}")
++    public CategoriaResponse buscarPorId(@PathVariable Long id) {
++        return service.buscarPorId(id);
++    }
++
++    @PutMapping("/{id}")
++    public CategoriaResponse atualizar(@PathVariable Long id,
++                                 @Valid @RequestBody CategoriaRequest request) {
++        return service.atualizar(id, request);
++    }
++
++    @DeleteMapping("/{id}")
++    public ResponseEntity<Void> deletar(@PathVariable Long id) {
++        service.deletar(id);
++        return ResponseEntity.noContent().build();
++    }
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/EmprestimoController.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/EmprestimoController.java
+index 749b4f5..17b9df8 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/EmprestimoController.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/EmprestimoController.java
+@@ -1,4 +1,51 @@
+ package com.example.ProjetoBiblioteca.controller;
+ 
++import com.example.ProjetoBiblioteca.dto.request.EmprestimoRequest;
++import com.example.ProjetoBiblioteca.dto.response.EmprestimoResponse;
++import com.example.ProjetoBiblioteca.service.EmprestimoService;
++import jakarta.validation.Valid;
++import lombok.RequiredArgsConstructor;
++import org.springframework.data.domain.Page;
++import org.springframework.data.domain.Pageable;
++import org.springframework.http.HttpStatus;
++import org.springframework.http.ResponseEntity;
++import org.springframework.web.bind.annotation.*;
++
++import java.util.List;
++
++@RestController
++@RequestMapping("/emprestimos")
++@RequiredArgsConstructor
+ public class EmprestimoController {
++
++    private final EmprestimoService service;
++
++    // Registra um empréstimo (valida limite de 3 e disponibilidade do livro)
++    @PostMapping
++    public ResponseEntity<EmprestimoResponse> registrar(@Valid @RequestBody EmprestimoRequest request) {
++        return ResponseEntity.status(HttpStatus.CREATED).body(service.registrar(request));
++    }
++
++    // Registra a devolução e calcula a multa
++    @PutMapping("/{id}/devolucao")
++    public EmprestimoResponse devolver(@PathVariable Long id) {
++        return service.devolver(id);
++    }
++
++    // GET /emprestimos?usuarioId=1&page=0&size=10
++    @GetMapping
++    public Page<EmprestimoResponse> listar(@RequestParam(required = false) Long usuarioId,
++                                           Pageable pageable) {
++        return service.listar(usuarioId, pageable);
++    }
++
++    @GetMapping("/atrasados")
++    public List<EmprestimoResponse> listarAtrasados() {
++        return service.listarAtrasados();
++    }
++
++    @GetMapping("/{id}")
++    public EmprestimoResponse buscarPorId(@PathVariable Long id) {
++        return service.buscarPorId(id);
++    }
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/LivroController.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/LivroController.java
+index a36d305..5fc1445 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/LivroController.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/LivroController.java
+@@ -1,4 +1,51 @@
+ package com.example.ProjetoBiblioteca.controller;
+ 
++import com.example.ProjetoBiblioteca.dto.request.LivroRequest;
++import com.example.ProjetoBiblioteca.dto.response.LivroResponse;
++import com.example.ProjetoBiblioteca.service.LivroService;
++import jakarta.validation.Valid;
++import lombok.RequiredArgsConstructor;
++import org.springframework.data.domain.Page;
++import org.springframework.data.domain.Pageable;
++import org.springframework.http.HttpStatus;
++import org.springframework.http.ResponseEntity;
++import org.springframework.web.bind.annotation.*;
++
++@RestController
++@RequestMapping("/livros")
++@RequiredArgsConstructor
+ public class LivroController {
++
++    private final LivroService service;
++
++    @PostMapping
++    public ResponseEntity<LivroResponse> criar(@Valid @RequestBody LivroRequest request) {
++        return ResponseEntity.status(HttpStatus.CREATED).body(service.criar(request));
++    }
++
++    // GET /livros?titulo=dom   |   ?autorId=1   |   ?categoriaId=2   (um filtro por vez)
++    @GetMapping
++    public Page<LivroResponse> listar(@RequestParam(required = false) String titulo,
++                                      @RequestParam(required = false) Long autorId,
++                                      @RequestParam(required = false) Long categoriaId,
++                                      Pageable pageable) {
++        return service.listar(titulo, autorId, categoriaId, pageable);
++    }
++
++    @GetMapping("/{id}")
++    public LivroResponse buscarPorId(@PathVariable Long id) {
++        return service.buscarPorId(id);
++    }
++
++    @PutMapping("/{id}")
++    public LivroResponse atualizar(@PathVariable Long id,
++                                   @Valid @RequestBody LivroRequest request) {
++        return service.atualizar(id, request);
++    }
++
++    @DeleteMapping("/{id}")
++    public ResponseEntity<Void> deletar(@PathVariable Long id) {
++        service.deletar(id);
++        return ResponseEntity.noContent().build();
++    }
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/RelatorioController.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/RelatorioController.java
+index d19afa0..f85dacf 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/RelatorioController.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/RelatorioController.java
+@@ -1,4 +1,35 @@
+ package com.example.ProjetoBiblioteca.controller;
+ 
++import com.example.ProjetoBiblioteca.dto.response.LivroMaisEmprestadoResponse;
++import com.example.ProjetoBiblioteca.dto.response.LivrosPorCategoriaResponse;
++import com.example.ProjetoBiblioteca.dto.response.MultaPorUsuarioResponse;
++import com.example.ProjetoBiblioteca.service.RelatorioService;
++import lombok.RequiredArgsConstructor;
++import org.springframework.web.bind.annotation.GetMapping;
++import org.springframework.web.bind.annotation.RequestMapping;
++import org.springframework.web.bind.annotation.RestController;
++
++import java.util.List;
++
++@RestController
++@RequestMapping("/relatorios")
++@RequiredArgsConstructor
+ public class RelatorioController {
++
++    private final RelatorioService service;
++
++    @GetMapping("/livros-mais-emprestados")
++    public List<LivroMaisEmprestadoResponse> livrosMaisEmprestados() {
++        return service.top5LivrosMaisEmprestados();
++    }
++
++    @GetMapping("/multas-por-usuario")
++    public List<MultaPorUsuarioResponse> multasPorUsuario() {
++        return service.multasPorUsuario();
++    }
++
++    @GetMapping("/livros-por-categoria")
++    public List<LivrosPorCategoriaResponse> livrosPorCategoria() {
++        return service.livrosPorCategoria();
++    }
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/UsuarioController.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/UsuarioController.java
+index 62d0c5b..9b40b6f 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/UsuarioController.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/controller/UsuarioController.java
+@@ -1,4 +1,49 @@
+ package com.example.ProjetoBiblioteca.controller;
+ 
++import com.example.ProjetoBiblioteca.dto.request.UsuarioRequest;
++import com.example.ProjetoBiblioteca.dto.response.UsuarioResponse;
++import com.example.ProjetoBiblioteca.service.UsuarioService;
++import jakarta.validation.Valid;
++import lombok.RequiredArgsConstructor;
++import org.springframework.data.domain.Page;
++import org.springframework.data.domain.Pageable;
++import org.springframework.http.HttpStatus;
++import org.springframework.http.ResponseEntity;
++import org.springframework.web.bind.annotation.*;
++
++@RestController
++@RequestMapping("/usuarios")
++@RequiredArgsConstructor
+ public class UsuarioController {
++
++    private final UsuarioService service;
++
++    @PostMapping
++    public ResponseEntity<UsuarioResponse> criar(@Valid @RequestBody UsuarioRequest request) {
++        return ResponseEntity.status(HttpStatus.CREATED).body(service.criar(request));
++    }
++
++    // GET /usuarios?nome=...&page=0&size=10&sort=nome,asc
++    @GetMapping
++    public Page<UsuarioResponse> listar(@RequestParam(required = false) String nome,
++                                   Pageable pageable) {
++        return service.listar(nome, pageable);
++    }
++
++    @GetMapping("/{id}")
++    public UsuarioResponse buscarPorId(@PathVariable Long id) {
++        return service.buscarPorId(id);
++    }
++
++    @PutMapping("/{id}")
++    public UsuarioResponse atualizar(@PathVariable Long id,
++                                 @Valid @RequestBody UsuarioRequest request) {
++        return service.atualizar(id, request);
++    }
++
++    @DeleteMapping("/{id}")
++    public ResponseEntity<Void> deletar(@PathVariable Long id) {
++        service.deletar(id);
++        return ResponseEntity.noContent().build();
++    }
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/AutorRequest.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/AutorRequest.java
+index 5f878c6..1536bfd 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/AutorRequest.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/AutorRequest.java
+@@ -7,8 +7,9 @@ import java.time.LocalDate;
+ 
+ public record AutorRequest(
+ 
+-        @NotBlank(message = "Nome obrigatorio")
+-        String nomeAutor,
++        @NotBlank(message = "O nome é obrigatório")
++        String nome,
++
+         String nacionalidade,
+ 
+         @Past(message = "A data de nascimento deve estar no passado")
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/CategoriaRequest.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/CategoriaRequest.java
+index f1d2923..2be8923 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/CategoriaRequest.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/CategoriaRequest.java
+@@ -5,11 +5,10 @@ import jakarta.validation.constraints.Size;
+ 
+ public record CategoriaRequest(
+ 
+-        @NotBlank(message = "Preecisa Informar qual o nome do livro")
+-        @Size(max = 50 , message = "digite no maximo 50 caracteres")
+-        String nameLivro,
++        @NotBlank(message = "O nome da categoria é obrigatório")
++        @Size(max = 50, message = "O nome deve ter no máximo 50 caracteres")
++        String nome,
+ 
+-        @Size(max = 250 , message = "Descricao no maximo 250 caracteres ")
+-        String descricao)
+-   {
++        @Size(max = 250, message = "A descrição deve ter no máximo 250 caracteres")
++        String descricao) {
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/LivroRequest.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/LivroRequest.java
+index caf8df5..b8533de 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/LivroRequest.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/request/LivroRequest.java
+@@ -1,26 +1,30 @@
+ package com.example.ProjetoBiblioteca.dto.request;
+ 
+-import jakarta.validation.constraints.*;
++import jakarta.validation.constraints.Max;
++import jakarta.validation.constraints.Min;
++import jakarta.validation.constraints.NotBlank;
++import jakarta.validation.constraints.NotEmpty;
++import jakarta.validation.constraints.NotNull;
++import jakarta.validation.constraints.Size;
+ 
+ import java.util.Set;
+ 
+-public record  LivroRequest (
++public record LivroRequest(
+ 
+-        @NotBlank(message = "Titulo é obrigatorio")
+-        @Size(max = 150 , message = "O Titulo do livro deve ter no maximo 150 caracteres")
+-        String tituloLivro,
++        @NotBlank(message = "O título é obrigatório")
++        @Size(max = 150, message = "O título deve ter no máximo 150 caracteres")
++        String titulo,
+ 
+-        @Size(max = 50 , message = "O isbn deve ter no maximo 50 caracteres")
+-        String isbnLivro,
++        @Size(max = 50, message = "O ISBN deve ter no máximo 50 caracteres")
++        String isbn,
+ 
+         @Min(value = 1000, message = "Ano de publicação inválido")
+         @Max(value = 2100, message = "Ano de publicação inválido")
+         Integer anoPublicacao,
+ 
+-        @NotNull(message = "O autor e obrigatorio")
++        @NotNull(message = "O autor é obrigatório")
+         Long autorId,
+ 
+-        @NotEmpty(message = "Mencione ao menos uma categoria")
+-        Set<Long> categoriaIds)
+-   {
++        @NotEmpty(message = "Informe ao menos uma categoria")
++        Set<Long> categoriaIds) {
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/AutorResponse.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/AutorResponse.java
+index 8f30be6..b2d99ff 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/AutorResponse.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/AutorResponse.java
+@@ -2,9 +2,9 @@ package com.example.ProjetoBiblioteca.dto.response;
+ 
+ import java.time.LocalDate;
+ 
+-public record  AutorResponse(
++public record AutorResponse(
+         Long id,
+-        String name,
++        String nome,
+         String nacionalidade,
+         LocalDate dataNascimento) {
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/EmprestimoResponse.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/EmprestimoResponse.java
+index 8541c89..94c667a 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/EmprestimoResponse.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/EmprestimoResponse.java
+@@ -1,5 +1,7 @@
+ package com.example.ProjetoBiblioteca.dto.response;
+ 
++import com.example.ProjetoBiblioteca.model.enums.StatusEmprestimo;
++
+ import java.math.BigDecimal;
+ import java.time.LocalDate;
+ 
+@@ -11,5 +13,7 @@ public record EmprestimoResponse(
+         String livroTitulo,
+         LocalDate dataEmprestimo,
+         LocalDate dataPrevistaDevolucao,
++        LocalDate dataDevolucao,
++        StatusEmprestimo status,
+         BigDecimal multa) {
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/LivroMaisEmprestadoResponse.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/LivroMaisEmprestadoResponse.java
+new file mode 100644
+index 0000000..42be102
+--- /dev/null
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/LivroMaisEmprestadoResponse.java
+@@ -0,0 +1,7 @@
++package com.example.ProjetoBiblioteca.dto.response;
++
++public record LivroMaisEmprestadoResponse(
++        Long livroId,
++        String titulo,
++        long totalEmprestimos) {
++}
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/LivrosPorCategoriaResponse.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/LivrosPorCategoriaResponse.java
+new file mode 100644
+index 0000000..c6da6b4
+--- /dev/null
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/LivrosPorCategoriaResponse.java
+@@ -0,0 +1,8 @@
++package com.example.ProjetoBiblioteca.dto.response;
++
++import java.util.List;
++
++public record LivrosPorCategoriaResponse(
++        String categoria,
++        List<String> titulos) {
++}
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/MultaPorUsuarioResponse.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/MultaPorUsuarioResponse.java
+new file mode 100644
+index 0000000..2639c44
+--- /dev/null
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/dto/response/MultaPorUsuarioResponse.java
+@@ -0,0 +1,9 @@
++package com.example.ProjetoBiblioteca.dto.response;
++
++import java.math.BigDecimal;
++
++public record MultaPorUsuarioResponse(
++        Long usuarioId,
++        String usuarioNome,
++        BigDecimal totalMultas) {
++}
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/exception/GlobalExceptionHandler.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/exception/GlobalExceptionHandler.java
+index 6d1d91b..270a05a 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/exception/GlobalExceptionHandler.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/exception/GlobalExceptionHandler.java
+@@ -1,10 +1,17 @@
+ package com.example.ProjetoBiblioteca.exception;
++
++import org.slf4j.Logger;
++import org.slf4j.LoggerFactory;
+ import org.springframework.dao.DataIntegrityViolationException;
+ import org.springframework.http.HttpStatus;
+ import org.springframework.http.ResponseEntity;
++import org.springframework.http.converter.HttpMessageNotReadableException;
++import org.springframework.web.ErrorResponse;
+ import org.springframework.web.bind.MethodArgumentNotValidException;
+ import org.springframework.web.bind.annotation.ExceptionHandler;
+ import org.springframework.web.bind.annotation.RestControllerAdvice;
++import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
++
+ import java.time.LocalDateTime;
+ import java.util.LinkedHashMap;
+ import java.util.Map;
+@@ -12,6 +19,8 @@ import java.util.Map;
+ @RestControllerAdvice
+ public class GlobalExceptionHandler {
+ 
++    private static final Logger log = LoggerFactory.getLogger(GlobalExceptionHandler.class);
++
+     // 404: registro não existe
+     @ExceptionHandler(RecursoNaoEncontradoException.class)
+     public ResponseEntity<ErroResponse> handleNaoEncontrado(RecursoNaoEncontradoException ex) {
+@@ -34,6 +43,18 @@ public class GlobalExceptionHandler {
+         return montar(HttpStatus.BAD_REQUEST, "Dados inválidos", campos);
+     }
+ 
++    // 400: JSON malformado ou com tipo errado (ex.: data fora do formato ano-mês-dia)
++    @ExceptionHandler(HttpMessageNotReadableException.class)
++    public ResponseEntity<ErroResponse> handleCorpoInvalido(HttpMessageNotReadableException ex) {
++        return montar(HttpStatus.BAD_REQUEST, "Corpo da requisição inválido ou mal formatado", null);
++    }
++
++    // 400: parâmetro da URL com tipo errado (ex.: /autores/abc)
++    @ExceptionHandler(MethodArgumentTypeMismatchException.class)
++    public ResponseEntity<ErroResponse> handleTipoInvalido(MethodArgumentTypeMismatchException ex) {
++        return montar(HttpStatus.BAD_REQUEST, "Valor inválido para o parâmetro: " + ex.getName(), null);
++    }
++
+     // 409: violação de unique ou de chave estrangeira no banco
+     @ExceptionHandler(DataIntegrityViolationException.class)
+     public ResponseEntity<ErroResponse> handleIntegridade(DataIntegrityViolationException ex) {
+@@ -41,9 +62,17 @@ public class GlobalExceptionHandler {
+                 "Operação não permitida: o registro viola uma restrição do banco", null);
+     }
+ 
+-    // 500: qualquer erro inesperado (não expõe detalhes internos)
++    // Qualquer outro erro
+     @ExceptionHandler(Exception.class)
+     public ResponseEntity<ErroResponse> handleGenerico(Exception ex) {
++        // Erros do próprio Spring MVC (rota inexistente, método não permitido...) mantêm o status original
++        if (ex instanceof ErrorResponse erro) {
++            HttpStatus status = HttpStatus.valueOf(erro.getStatusCode().value());
++            return montar(status, status.getReasonPhrase(), null);
++        }
++
++        // 500: erro inesperado. A causa fica no log, e o cliente não vê detalhes internos
++        log.error("Erro inesperado", ex);
+         return montar(HttpStatus.INTERNAL_SERVER_ERROR, "Erro interno no servidor", null);
+     }
+ 
+@@ -58,4 +87,3 @@ public class GlobalExceptionHandler {
+         return ResponseEntity.status(status).body(corpo);
+     }
+ }
+-
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/AutorMapper.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/AutorMapper.java
+index f728599..1029038 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/AutorMapper.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/AutorMapper.java
+@@ -1,12 +1,26 @@
+ package com.example.ProjetoBiblioteca.mapper;
+ 
++import com.example.ProjetoBiblioteca.dto.request.AutorRequest;
+ import com.example.ProjetoBiblioteca.dto.response.AutorResponse;
+ import com.example.ProjetoBiblioteca.model.Autor;
++import org.springframework.stereotype.Component;
+ 
++@Component
+ public class AutorMapper {
+ 
+-    public AutorResponse toResponse(Autor autor) {
++    public Autor toEntity(AutorRequest request) {
++        Autor autor = new Autor();
++        updateEntity(autor, request);
++        return autor;
++    }
+ 
++    public void updateEntity(Autor autor, AutorRequest request) {
++        autor.setNome(request.nome());
++        autor.setNacionalidade(request.nacionalidade());
++        autor.setDataNascimento(request.dataNascimento());
++    }
++
++    public AutorResponse toResponse(Autor autor) {
+         return new AutorResponse(
+                 autor.getId(),
+                 autor.getNome(),
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/CategoriaMapper.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/CategoriaMapper.java
+index 340d65e..a965232 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/CategoriaMapper.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/CategoriaMapper.java
+@@ -8,9 +8,7 @@ import org.springframework.stereotype.Component;
+ @Component
+ public class CategoriaMapper {
+ 
+-
+-    // CategoriaRequest -> Categoria (para salvar um registro novo)
+-
++    // CategoriaRequest -> Categoria novo
+     public Categoria toEntity(CategoriaRequest request) {
+         Categoria categoria = new Categoria();
+         updateEntity(categoria, request);
+@@ -18,15 +16,12 @@ public class CategoriaMapper {
+     }
+ 
+     // Copia os dados do request para uma categoria que já existe (usado no PUT)
+-
+     public void updateEntity(Categoria categoria, CategoriaRequest request) {
+-        categoria.setNome(request.nameLivro());
++        categoria.setNome(request.nome());
+         categoria.setDescricao(request.descricao());
+     }
+ 
+-
+-    // Categoria -> CategoriaResponse (para devolver ao cliente)
+-
++    // Categoria -> CategoriaResponse
+     public CategoriaResponse toResponse(Categoria categoria) {
+         return new CategoriaResponse(
+                 categoria.getId(),
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/EmprestimoMapper.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/EmprestimoMapper.java
+index 497727b..4e8b735 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/EmprestimoMapper.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/EmprestimoMapper.java
+@@ -9,7 +9,6 @@ public class EmprestimoMapper {
+ 
+     public EmprestimoResponse toResponse(Emprestimo emprestimo) {
+         return new EmprestimoResponse(
+-
+                 emprestimo.getId(),
+                 emprestimo.getUsuario().getId(),
+                 emprestimo.getUsuario().getNome(),
+@@ -17,6 +16,8 @@ public class EmprestimoMapper {
+                 emprestimo.getLivro().getTitulo(),
+                 emprestimo.getDataEmprestimo(),
+                 emprestimo.getDataPrevistaDevolucao(),
++                emprestimo.getDataDevolucao(),
++                emprestimo.getStatus(),
+                 emprestimo.getMulta());
+     }
+-}
+\ No newline at end of file
++}
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/LivroMapper.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/LivroMapper.java
+index abb6bd3..fcfb33b 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/LivroMapper.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/LivroMapper.java
+@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
+ @Component
+ public class LivroMapper {
+ 
+-    // LivroRequest -> Livro novo
++    // LivroRequest -> Livro novo (autor e categorias são ligados pelo service)
+     public Livro toEntity(LivroRequest request) {
+         Livro livro = new Livro();
+         updateEntity(livro, request);
+@@ -19,8 +19,8 @@ public class LivroMapper {
+ 
+     // Copia os campos simples do request para um livro existente (usado no PUT)
+     public void updateEntity(Livro livro, LivroRequest request) {
+-        livro.setTitulo(request.tituloLivro());
+-        livro.setIsbn(request.isbnLivro());
++        livro.setTitulo(request.titulo());
++        livro.setIsbn(request.isbn());
+         livro.setAnoPublicacao(request.anoPublicacao());
+     }
+ 
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/UsuarioMapper.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/UsuarioMapper.java
+index 70d39d5..aa20800 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/UsuarioMapper.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/mapper/UsuarioMapper.java
+@@ -25,13 +25,13 @@ public class UsuarioMapper {
+         usuario.setTelefone(request.telefone());
+     }
+ 
+-    // Usuario -> UsuarioResponse
++    // Usuario -> UsuarioResponse (a ordem segue o record: id, nome, email, telefone, dataCadastro)
+     public UsuarioResponse toResponse(Usuario usuario) {
+-       return new UsuarioResponse(usuario.getId(),
+-        usuario.getEmail(),
+-        usuario.getNome(),
+-        usuario.getTelefone(),
+-        usuario.getDataCadastro());
+-
++        return new UsuarioResponse(
++                usuario.getId(),
++                usuario.getNome(),
++                usuario.getEmail(),
++                usuario.getTelefone(),
++                usuario.getDataCadastro());
+     }
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/model/Emprestimo.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/model/Emprestimo.java
+index 2bffc9c..174e5e0 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/model/Emprestimo.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/model/Emprestimo.java
+@@ -1,4 +1,6 @@
+ package com.example.ProjetoBiblioteca.model;
++
++import com.example.ProjetoBiblioteca.model.enums.StatusEmprestimo;
+ import jakarta.persistence.*;
+ import lombok.Getter;
+ import lombok.NoArgsConstructor;
+@@ -6,11 +8,11 @@ import lombok.Setter;
+ 
+ import java.math.BigDecimal;
+ import java.time.LocalDate;
++
+ @Entity
++@Getter
+ @Setter
+ @NoArgsConstructor
+-@Getter
+-
+ public class Emprestimo {
+ 
+     @Id
+@@ -18,11 +20,11 @@ public class Emprestimo {
+     private Long id;
+ 
+     @ManyToOne(optional = false)
+-    @JoinColumn(name = "usuario_id" , nullable = false)
++    @JoinColumn(name = "usuario_id", nullable = false)
+     private Usuario usuario;
+ 
+     @ManyToOne(optional = false)
+-    @JoinColumn(name = "livro_id" , nullable = false )
++    @JoinColumn(name = "livro_id", nullable = false)
+     private Livro livro;
+ 
+     @Column(nullable = false)
+@@ -31,12 +33,14 @@ public class Emprestimo {
+     @Column(nullable = false)
+     private LocalDate dataPrevistaDevolucao;
+ 
+-    // DIAS DE ATRASO X VALOR POR DIA
+-
+-    @Column(precision = 10, scale = 2 )
+-    private BigDecimal multa =  BigDecimal.ZERO;
+-
+-
++    // Fica nula até o livro ser devolvido
++    private LocalDate dataDevolucao;
+ 
++    @Enumerated(EnumType.STRING)
++    @Column(nullable = false)
++    private StatusEmprestimo status = StatusEmprestimo.ATIVO;
+ 
++    // dias de atraso x valor por dia
++    @Column(precision = 10, scale = 2)
++    private BigDecimal multa = BigDecimal.ZERO;
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/model/Usuario.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/model/Usuario.java
+index ce34ab1..7201283 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/model/Usuario.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/model/Usuario.java
+@@ -29,7 +29,7 @@ public class Usuario {
+     private LocalDate dataCadastro;
+ 
+     @OneToMany(mappedBy = "usuario")
+-    private List<Emprestimo> Emprestimos = new ArrayList<>();
++    private List<Emprestimo> emprestimos = new ArrayList<>();
+ 
+ 
+ 
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/AutorRepository.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/AutorRepository.java
+index 32e0f71..98943ac 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/AutorRepository.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/AutorRepository.java
+@@ -1,13 +1,12 @@
+ package com.example.ProjetoBiblioteca.repository;
+ 
+-import com.example.ProjetoBiblioteca.dto.response.AutorResponse;
+ import com.example.ProjetoBiblioteca.model.Autor;
+-import com.example.ProjetoBiblioteca.model.Categoria;
+ import org.springframework.data.domain.Page;
+ import org.springframework.data.domain.Pageable;
+ import org.springframework.data.jpa.repository.JpaRepository;
+ 
+-public interface AutorRepository extends JpaRepository<Autor,Long> {
++public interface AutorRepository extends JpaRepository<Autor, Long> {
+ 
++    // Busca parcial pelo nome, sem diferenciar maiúsculas de minúsculas
+     Page<Autor> findByNomeContainingIgnoreCase(String nome, Pageable pageable);
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/CategoriaRepository.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/CategoriaRepository.java
+index 60fa6ca..0bfc48b 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/CategoriaRepository.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/CategoriaRepository.java
+@@ -1,7 +1,5 @@
+ package com.example.ProjetoBiblioteca.repository;
+ 
+-import com.example.ProjetoBiblioteca.dto.request.CategoriaRequest;
+-import com.example.ProjetoBiblioteca.model.Autor;
+ import com.example.ProjetoBiblioteca.model.Categoria;
+ import org.springframework.data.domain.Page;
+ import org.springframework.data.domain.Pageable;
+@@ -9,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
+ 
+ import java.util.Optional;
+ 
+-public interface CategoriaRepository extends JpaRepository<Categoria,Integer> {
++public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
+ 
+     // Busca parcial pelo nome
+     Page<Categoria> findByNomeContainingIgnoreCase(String nome, Pageable pageable);
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/EmprestimoRepository.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/EmprestimoRepository.java
+index 4682be1..fc2df29 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/EmprestimoRepository.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/repository/EmprestimoRepository.java
+@@ -22,6 +22,9 @@ public interface EmprestimoRepository extends JpaRepository<Emprestimo, Long> {
+     // Para impedir remover um usuário que tem empréstimos
+     boolean existsByUsuarioId(Long usuarioId);
+ 
++    // Para impedir remover um livro que tem empréstimos no histórico
++    boolean existsByLivroId(Long livroId);
++
+     // Histórico de um usuário
+     Page<Emprestimo> findByUsuarioId(Long usuarioId, Pageable pageable);
+ 
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/AutorService.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/AutorService.java
+index 1c19563..77e26f0 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/AutorService.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/AutorService.java
+@@ -2,43 +2,72 @@ package com.example.ProjetoBiblioteca.service;
+ 
+ import com.example.ProjetoBiblioteca.dto.request.AutorRequest;
+ import com.example.ProjetoBiblioteca.dto.response.AutorResponse;
++import com.example.ProjetoBiblioteca.exception.RegraNegocioException;
++import com.example.ProjetoBiblioteca.mapper.AutorMapper;
+ import com.example.ProjetoBiblioteca.model.Autor;
+ import com.example.ProjetoBiblioteca.repository.AutorRepository;
+-import jakarta.transaction.Transactional;
++import com.example.ProjetoBiblioteca.repository.LivroRepository;
++import org.springframework.data.domain.Page;
++import org.springframework.data.domain.Pageable;
+ import org.springframework.stereotype.Service;
++import org.springframework.transaction.annotation.Transactional;
+ 
+ @Service
+-@Transactional
+ public class AutorService extends CrudService<Autor, Long, AutorRequest, AutorResponse> {
+ 
+-    public AutorService(AutorRepository repository) {
+-        super(repository);
++    private final AutorRepository autorRepository;
++    private final LivroRepository livroRepository;
++    private final AutorMapper mapper;
++
++    public AutorService(AutorRepository autorRepository,
++                        LivroRepository livroRepository,
++                        AutorMapper mapper) {
++        super(autorRepository);
++        this.autorRepository = autorRepository;
++        this.livroRepository = livroRepository;
++        this.mapper = mapper;
+     }
+ 
++    // ---------- Conversões exigidas pela classe base ----------
++
+     @Override
+     protected Autor toEntity(AutorRequest request) {
+-        Autor autor = new Autor();
+-        autor.setNome(request.nomeAutor());
+-        autor.setNacionalidade(request.nacionalidade());
+-        autor.setDataNascimento(request.dataNascimento());
+-        return autor;
++        return mapper.toEntity(request);
+     }
+ 
+     @Override
+-    protected void updateEntity(Autor entity, AutorRequest request) {
+-        entity.setNome(request.nomeAutor());
+-        entity.setNacionalidade(request.nacionalidade());
+-        entity.setDataNascimento(request.dataNascimento());
++    protected void updateEntity(Autor autor, AutorRequest request) {
++        mapper.updateEntity(autor, request);
+     }
+ 
+     @Override
+-    protected AutorResponse toResponse(Autor entity) {
+-        return new AutorResponse(
+-                entity.getId(),
+-                entity.getNome(),
+-                entity.getNacionalidade(),
+-                entity.getDataNascimento()
+-        );
++    protected AutorResponse toResponse(Autor autor) {
++        return mapper.toResponse(autor);
++    }
++
++    // ---------- O que é específico do autor ----------
++
++    // Listagem com filtro opcional por nome
++    @Transactional(readOnly = true)
++    public Page<AutorResponse> listar(String nome, Pageable pageable) {
++        if (nome == null || nome.isBlank()) {
++            return listar(pageable);
++        }
++        return autorRepository.findByNomeContainingIgnoreCase(nome, pageable)
++                .map(this::toResponse);
+     }
+-}
+ 
++    // Regra: autor com livros cadastrados não pode ser removido
++    @Override
++    @Transactional
++    public void deletar(Long id) {
++        Autor autor = buscarEntidade(id);
++
++        if (livroRepository.existsByAutorId(id)) {
++            throw new RegraNegocioException(
++                    "Autor possui livros cadastrados e não pode ser removido");
++        }
++
++        autorRepository.delete(autor);
++    }
++}
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/CategoriaService.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/CategoriaService.java
+index 1fd3464..525b4ce 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/CategoriaService.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/CategoriaService.java
+@@ -2,13 +2,99 @@ package com.example.ProjetoBiblioteca.service;
+ 
+ import com.example.ProjetoBiblioteca.dto.request.CategoriaRequest;
+ import com.example.ProjetoBiblioteca.dto.response.CategoriaResponse;
++import com.example.ProjetoBiblioteca.exception.RegraNegocioException;
++import com.example.ProjetoBiblioteca.mapper.CategoriaMapper;
+ import com.example.ProjetoBiblioteca.model.Categoria;
+-import com.example.ProjetoBiblioteca.model.Livro;
+ import com.example.ProjetoBiblioteca.repository.CategoriaRepository;
++import com.example.ProjetoBiblioteca.repository.LivroRepository;
++import org.springframework.data.domain.Page;
++import org.springframework.data.domain.Pageable;
+ import org.springframework.stereotype.Service;
++import org.springframework.transaction.annotation.Transactional;
+ 
+ @Service
+-public class CategoriaService extends CrudService<Categoria,Long, CategoriaRequest , CategoriaResponse> {
++public class CategoriaService extends CrudService<Categoria, Long, CategoriaRequest, CategoriaResponse> {
+ 
++    private final CategoriaRepository categoriaRepository;
++    private final LivroRepository livroRepository;
++    private final CategoriaMapper mapper;
+ 
+-}
+\ No newline at end of file
++    public CategoriaService(CategoriaRepository categoriaRepository,
++                            LivroRepository livroRepository,
++                            CategoriaMapper mapper) {
++        super(categoriaRepository);
++        this.categoriaRepository = categoriaRepository;
++        this.livroRepository = livroRepository;
++        this.mapper = mapper;
++    }
++
++    // ---------- Conversões exigidas pela classe base ----------
++
++    @Override
++    protected Categoria toEntity(CategoriaRequest request) {
++        return mapper.toEntity(request);
++    }
++
++    @Override
++    protected void updateEntity(Categoria categoria, CategoriaRequest request) {
++        mapper.updateEntity(categoria, request);
++    }
++
++    @Override
++    protected CategoriaResponse toResponse(Categoria categoria) {
++        return mapper.toResponse(categoria);
++    }
++
++    // ---------- O que é específico da categoria ----------
++
++    // Regra: não pode haver duas categorias com o mesmo nome
++    @Override
++    @Transactional
++    public CategoriaResponse criar(CategoriaRequest request) {
++        validarNomeDuplicado(request.nome());
++        return super.criar(request);
++    }
++
++    // Na atualização, só valida se o nome mudou
++    @Override
++    @Transactional
++    public CategoriaResponse atualizar(Long id, CategoriaRequest request) {
++        Categoria atual = buscarEntidade(id);
++
++        if (!atual.getNome().equalsIgnoreCase(request.nome())) {
++            validarNomeDuplicado(request.nome());
++        }
++
++        return super.atualizar(id, request);
++    }
++
++    // Listagem com filtro opcional por nome
++    @Transactional(readOnly = true)
++    public Page<CategoriaResponse> listar(String nome, Pageable pageable) {
++        if (nome == null || nome.isBlank()) {
++            return listar(pageable);
++        }
++        return categoriaRepository.findByNomeContainingIgnoreCase(nome, pageable)
++                .map(this::toResponse);
++    }
++
++    // Regra: categoria com livros vinculados não pode ser removida
++    @Override
++    @Transactional
++    public void deletar(Long id) {
++        Categoria categoria = buscarEntidade(id);
++
++        if (livroRepository.existsByCategoriasId(id)) {
++            throw new RegraNegocioException(
++                    "Categoria possui livros vinculados e não pode ser removida");
++        }
++
++        categoriaRepository.delete(categoria);
++    }
++
++    private void validarNomeDuplicado(String nome) {
++        if (categoriaRepository.existsByNomeIgnoreCase(nome)) {
++            throw new RegraNegocioException("Categoria já cadastrada: " + nome);
++        }
++    }
++}
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/EmprestimoService.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/EmprestimoService.java
+index 777ab4d..fac5b02 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/EmprestimoService.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/EmprestimoService.java
+@@ -1,6 +1,9 @@
+ package com.example.ProjetoBiblioteca.service;
++
+ import com.example.ProjetoBiblioteca.dto.request.EmprestimoRequest;
+ import com.example.ProjetoBiblioteca.dto.response.EmprestimoResponse;
++import com.example.ProjetoBiblioteca.exception.RecursoNaoEncontradoException;
++import com.example.ProjetoBiblioteca.exception.RegraNegocioException;
+ import com.example.ProjetoBiblioteca.mapper.EmprestimoMapper;
+ import com.example.ProjetoBiblioteca.model.Emprestimo;
+ import com.example.ProjetoBiblioteca.model.Livro;
+@@ -10,15 +13,19 @@ import com.example.ProjetoBiblioteca.repository.EmprestimoRepository;
+ import com.example.ProjetoBiblioteca.repository.LivroRepository;
+ import com.example.ProjetoBiblioteca.repository.UsuarioRepository;
+ import lombok.RequiredArgsConstructor;
++import org.springframework.data.domain.Page;
++import org.springframework.data.domain.Pageable;
+ import org.springframework.stereotype.Service;
+ import org.springframework.transaction.annotation.Transactional;
+ 
+ import java.math.BigDecimal;
+ import java.time.LocalDate;
++import java.time.temporal.ChronoUnit;
++import java.util.List;
+ 
+ @Service
+ @RequiredArgsConstructor
+-public class EmprestimoService{
++public class EmprestimoService {
+ 
+     public static final int MAX_EMPRESTIMOS_ATIVOS = 3;
+     public static final int PRAZO_EM_DIAS = 14;
+@@ -29,29 +36,118 @@ public class EmprestimoService{
+     private final LivroRepository livroRepository;
+     private final EmprestimoMapper mapper;
+ 
+-    //------------------REGISTRAR EMPRESTIMOS--------------------//
+-     @Transactional
++    // ---------- Registrar empréstimo ----------
+ 
+-    public EmprestimoResponse registrar(EmprestimoRequest request){
++    @Transactional
++    public EmprestimoResponse registrar(EmprestimoRequest request) {
+         Usuario usuario = buscarUsuario(request.usuarioId());
+         Livro livro = buscarLivro(request.livroId());
+ 
+         validarLimiteDeEmprestimos(usuario);
+         validarLivroDisponivel(livro);
+ 
+-         LocalDate hoje = LocalDate.now();
++        LocalDate hoje = LocalDate.now();
++
++        Emprestimo emprestimo = new Emprestimo();
++        emprestimo.setUsuario(usuario);
++        emprestimo.setLivro(livro);
++        emprestimo.setDataEmprestimo(hoje);
++        emprestimo.setDataPrevistaDevolucao(hoje.plusDays(PRAZO_EM_DIAS));
++        emprestimo.setStatus(StatusEmprestimo.ATIVO);
++
++        livro.setDisponivel(false);
++
++        return mapper.toResponse(emprestimoRepository.save(emprestimo));
++    }
++
++    // ---------- Devolver ----------
++
++    @Transactional
++    public EmprestimoResponse devolver(Long id) {
++        Emprestimo emprestimo = buscarEntidade(id);
++
++        if (emprestimo.getStatus() == StatusEmprestimo.DEVOLVIDO) {
++            throw new RegraNegocioException("Este empréstimo já foi devolvido");
++        }
++
++        LocalDate hoje = LocalDate.now();
++
++        emprestimo.setDataDevolucao(hoje);
++        emprestimo.setStatus(StatusEmprestimo.DEVOLVIDO);
++        emprestimo.setMulta(calcularMulta(emprestimo.getDataPrevistaDevolucao(), hoje));
++
++        emprestimo.getLivro().setDisponivel(true);
++
++        return mapper.toResponse(emprestimoRepository.save(emprestimo));
++    }
++
++    // ---------- Consultas ----------
++
++    @Transactional(readOnly = true)
++    public Page<EmprestimoResponse> listar(Long usuarioId, Pageable pageable) {
++        Page<Emprestimo> emprestimos = (usuarioId == null)
++                ? emprestimoRepository.findAll(pageable)
++                : emprestimoRepository.findByUsuarioId(usuarioId, pageable);
++
++        return emprestimos.map(mapper::toResponse);
++    }
++
++    @Transactional(readOnly = true)
++    public EmprestimoResponse buscarPorId(Long id) {
++        return mapper.toResponse(buscarEntidade(id));
++    }
++
++    @Transactional(readOnly = true)
++    public List<EmprestimoResponse> listarAtrasados() {
++        return emprestimoRepository.findAtrasados(LocalDate.now()).stream()
++                .map(mapper::toResponse)
++                .toList();
++    }
++
++    // ---------- Regras de negócio ----------
++
++    private void validarLimiteDeEmprestimos(Usuario usuario) {
++        long ativos = emprestimoRepository
++                .countByUsuarioIdAndStatus(usuario.getId(), StatusEmprestimo.ATIVO);
++
++        if (ativos >= MAX_EMPRESTIMOS_ATIVOS) {
++            throw new RegraNegocioException(
++                    "O usuário já possui " + MAX_EMPRESTIMOS_ATIVOS + " empréstimos ativos");
++        }
++    }
++
++    private void validarLivroDisponivel(Livro livro) {
++        if (!livro.isDisponivel()) {
++            throw new RegraNegocioException("O livro já está emprestado");
++        }
++    }
++
++    private BigDecimal calcularMulta(LocalDate dataPrevista, LocalDate dataDevolucao) {
++        long diasDeAtraso = ChronoUnit.DAYS.between(dataPrevista, dataDevolucao);
+ 
+-         Emprestimo emprestimo = new Emprestimo();
+-         emprestimo.setUsuario(usuario);
+-         emprestimo.setLivro(livro);
+-         emprestimo.setDataEmprestimo(hoje);
+-         emprestimo.setDataPrevistaDevolucao(hoje.plusDays(PRAZO_EM_DIAS));
+-         emprestimo.setStatus(StatusEmprestimo.ATIVO);
++        if (diasDeAtraso <= 0) {
++            return BigDecimal.ZERO;
++        }
++        return MULTA_POR_DIA.multiply(BigDecimal.valueOf(diasDeAtraso));
++    }
+ 
+-         livro.setDisponivel(false);
++    // ---------- Buscas auxiliares (404 se não existir) ----------
+ 
+-         return mapper.toResponse(emprestimoRepository.save(emprestimo));
+-     }
++    private Emprestimo buscarEntidade(Long id) {
++        return emprestimoRepository.findById(id)
++                .orElseThrow(() -> new RecursoNaoEncontradoException(
++                        "Empréstimo não encontrado: " + id));
++    }
+ 
++    private Usuario buscarUsuario(Long id) {
++        return usuarioRepository.findById(id)
++                .orElseThrow(() -> new RecursoNaoEncontradoException(
++                        "Usuário não encontrado: " + id));
++    }
+ 
++    private Livro buscarLivro(Long id) {
++        return livroRepository.findById(id)
++                .orElseThrow(() -> new RecursoNaoEncontradoException(
++                        "Livro não encontrado: " + id));
++    }
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/LivroService.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/LivroService.java
+index d9f82a2..1f42b91 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/LivroService.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/LivroService.java
+@@ -1,10 +1,147 @@
+ package com.example.ProjetoBiblioteca.service;
+ 
++import com.example.ProjetoBiblioteca.dto.request.LivroRequest;
++import com.example.ProjetoBiblioteca.dto.response.LivroResponse;
++import com.example.ProjetoBiblioteca.exception.RecursoNaoEncontradoException;
++import com.example.ProjetoBiblioteca.exception.RegraNegocioException;
++import com.example.ProjetoBiblioteca.mapper.LivroMapper;
++import com.example.ProjetoBiblioteca.model.Autor;
++import com.example.ProjetoBiblioteca.model.Categoria;
++import com.example.ProjetoBiblioteca.model.Livro;
++import com.example.ProjetoBiblioteca.repository.AutorRepository;
++import com.example.ProjetoBiblioteca.repository.CategoriaRepository;
++import com.example.ProjetoBiblioteca.repository.EmprestimoRepository;
++import com.example.ProjetoBiblioteca.repository.LivroRepository;
++import org.springframework.data.domain.Page;
++import org.springframework.data.domain.Pageable;
+ import org.springframework.stereotype.Service;
++import org.springframework.transaction.annotation.Transactional;
++
++import java.util.HashSet;
++import java.util.List;
+ 
+ @Service
+-public class LivroService {
++public class LivroService extends CrudService<Livro, Long, LivroRequest, LivroResponse> {
++
++    private final LivroRepository livroRepository;
++    private final AutorRepository autorRepository;
++    private final CategoriaRepository categoriaRepository;
++    private final EmprestimoRepository emprestimoRepository;
++    private final LivroMapper mapper;
++
++    public LivroService(LivroRepository livroRepository,
++                        AutorRepository autorRepository,
++                        CategoriaRepository categoriaRepository,
++                        EmprestimoRepository emprestimoRepository,
++                        LivroMapper mapper) {
++        super(livroRepository);
++        this.livroRepository = livroRepository;
++        this.autorRepository = autorRepository;
++        this.categoriaRepository = categoriaRepository;
++        this.emprestimoRepository = emprestimoRepository;
++        this.mapper = mapper;
++    }
++
++    // ---------- Conversões exigidas pela classe base ----------
++
++    @Override
++    protected Livro toEntity(LivroRequest request) {
++        return mapper.toEntity(request);
++    }
++
++    @Override
++    protected void updateEntity(Livro livro, LivroRequest request) {
++        mapper.updateEntity(livro, request);
++    }
++
++    @Override
++    protected LivroResponse toResponse(Livro livro) {
++        return mapper.toResponse(livro);
++    }
++
++    // ---------- Criar e atualizar: precisam ligar autor e categorias ----------
++
++    @Override
++    @Transactional
++    public LivroResponse criar(LivroRequest request) {
++        validarIsbnDuplicado(request.isbn());
++
++        Livro livro = mapper.toEntity(request);
++        ligarAutorECategorias(livro, request);
++
++        return mapper.toResponse(livroRepository.save(livro));
++    }
++
++    @Override
++    @Transactional
++    public LivroResponse atualizar(Long id, LivroRequest request) {
++        Livro livro = buscarEntidade(id);
++
++        // Só valida o ISBN se ele mudou (senão o livro "conflita" consigo mesmo)
++        if (request.isbn() != null && !request.isbn().equals(livro.getIsbn())) {
++            validarIsbnDuplicado(request.isbn());
++        }
++
++        mapper.updateEntity(livro, request);
++        ligarAutorECategorias(livro, request);
++
++        return mapper.toResponse(livroRepository.save(livro));
++    }
++
++    // ---------- Listagem com filtros (usa um filtro por vez) ----------
++
++    @Transactional(readOnly = true)
++    public Page<LivroResponse> listar(String titulo, Long autorId, Long categoriaId, Pageable pageable) {
++        Page<Livro> livros;
++
++        if (titulo != null && !titulo.isBlank()) {
++            livros = livroRepository.findByTituloContainingIgnoreCase(titulo, pageable);
++        } else if (autorId != null) {
++            livros = livroRepository.findByAutorId(autorId, pageable);
++        } else if (categoriaId != null) {
++            livros = livroRepository.findByCategoriasId(categoriaId, pageable);
++        } else {
++            livros = livroRepository.findAll(pageable);
++        }
++
++        return livros.map(this::toResponse);
++    }
++
++    // ---------- Remoção ----------
++
++    // Regra: livro com empréstimos no histórico não pode ser removido
++    @Override
++    @Transactional
++    public void deletar(Long id) {
++        Livro livro = buscarEntidade(id);
++
++        if (emprestimoRepository.existsByLivroId(id)) {
++            throw new RegraNegocioException(
++                    "Livro possui empréstimos registrados e não pode ser removido");
++        }
++
++        livroRepository.delete(livro);
++    }
++
++    // ---------- Métodos privados ----------
++
++    private void ligarAutorECategorias(Livro livro, LivroRequest request) {
++        Autor autor = autorRepository.findById(request.autorId())
++                .orElseThrow(() -> new RecursoNaoEncontradoException(
++                        "Autor não encontrado: " + request.autorId()));
+ 
++        List<Categoria> categorias = categoriaRepository.findAllById(request.categoriaIds());
++        if (categorias.size() != request.categoriaIds().size()) {
++            throw new RecursoNaoEncontradoException("Alguma categoria informada não existe");
++        }
+ 
++        livro.setAutor(autor);
++        livro.setCategorias(new HashSet<>(categorias));
++    }
+ 
++    private void validarIsbnDuplicado(String isbn) {
++        if (isbn != null && livroRepository.existsByIsbn(isbn)) {
++            throw new RegraNegocioException("Já existe um livro com o ISBN: " + isbn);
++        }
++    }
+ }
+diff --git a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/RelatorioService.java b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/RelatorioService.java
+index 7a097e0..311edf6 100644
+--- a/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/RelatorioService.java
++++ b/ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/service/RelatorioService.java
+@@ -1,7 +1,88 @@
+ package com.example.ProjetoBiblioteca.service;
+ 
++import com.example.ProjetoBiblioteca.dto.response.LivroMaisEmprestadoResponse;
++import com.example.ProjetoBiblioteca.dto.response.LivrosPorCategoriaResponse;
++import com.example.ProjetoBiblioteca.dto.response.MultaPorUsuarioResponse;
++import com.example.ProjetoBiblioteca.model.Emprestimo;
++import com.example.ProjetoBiblioteca.model.Livro;
++import com.example.ProjetoBiblioteca.model.Usuario;
++import com.example.ProjetoBiblioteca.repository.EmprestimoRepository;
++import com.example.ProjetoBiblioteca.repository.LivroRepository;
++import lombok.RequiredArgsConstructor;
+ import org.springframework.stereotype.Service;
++import org.springframework.transaction.annotation.Transactional;
+ 
++import java.math.BigDecimal;
++import java.util.List;
++import java.util.Map;
++import java.util.TreeMap;
++import java.util.stream.Collectors;
++
++/**
++ * Relatórios montados com Stream API.
++ * Para estudo, os dados são carregados e agrupados em memória. Com muitos registros,
++ * o ideal seria fazer o agrupamento no banco (GROUP BY).
++ */
+ @Service
++@RequiredArgsConstructor
+ public class RelatorioService {
++
++    private final EmprestimoRepository emprestimoRepository;
++    private final LivroRepository livroRepository;
++
++    // Top 5 livros mais emprestados
++    @Transactional(readOnly = true)
++    public List<LivroMaisEmprestadoResponse> top5LivrosMaisEmprestados() {
++        Map<Livro, Long> totalPorLivro = emprestimoRepository.findAll().stream()
++                .collect(Collectors.groupingBy(Emprestimo::getLivro, Collectors.counting()));
++
++        return totalPorLivro.entrySet().stream()
++                .sorted(Map.Entry.<Livro, Long>comparingByValue().reversed()
++                        .thenComparing(e -> e.getKey().getTitulo()))
++                .limit(5)
++                .map(e -> new LivroMaisEmprestadoResponse(
++                        e.getKey().getId(),
++                        e.getKey().getTitulo(),
++                        e.getValue()))
++                .toList();
++    }
++
++    // Total de multas por usuário (só quem tem multa)
++    @Transactional(readOnly = true)
++    public List<MultaPorUsuarioResponse> multasPorUsuario() {
++        Map<Usuario, BigDecimal> totalPorUsuario = emprestimoRepository.findAll().stream()
++                .collect(Collectors.groupingBy(
++                        Emprestimo::getUsuario,
++                        Collectors.reducing(
++                                BigDecimal.ZERO,
++                                e -> e.getMulta() == null ? BigDecimal.ZERO : e.getMulta(),
++                                BigDecimal::add)));
++
++        return totalPorUsuario.entrySet().stream()
++                .filter(e -> e.getValue().compareTo(BigDecimal.ZERO) > 0)
++                .sorted(Map.Entry.<Usuario, BigDecimal>comparingByValue().reversed())
++                .map(e -> new MultaPorUsuarioResponse(
++                        e.getKey().getId(),
++                        e.getKey().getNome(),
++                        e.getValue()))
++                .toList();
++    }
++
++    // Livros agrupados por categoria (em ordem alfabética)
++    @Transactional(readOnly = true)
++    public List<LivrosPorCategoriaResponse> livrosPorCategoria() {
++        Map<String, List<String>> titulosPorCategoria = livroRepository.findAll().stream()
++                .flatMap(livro -> livro.getCategorias().stream()
++                        .map(categoria -> Map.entry(categoria.getNome(), livro.getTitulo())))
++                .collect(Collectors.groupingBy(
++                        Map.Entry::getKey,
++                        TreeMap::new,
++                        Collectors.mapping(Map.Entry::getValue, Collectors.toList())));
++
++        return titulosPorCategoria.entrySet().stream()
++                .map(e -> new LivrosPorCategoriaResponse(
++                        e.getKey(),
++                        e.getValue().stream().sorted().toList()))
++                .toList();
++    }
+ }
+diff --git a/ProjetoBiblioteca/src/main/resources/application.properties b/ProjetoBiblioteca/src/main/resources/application.properties
+index cb6f774..e6c810c 100644
+--- a/ProjetoBiblioteca/src/main/resources/application.properties
++++ b/ProjetoBiblioteca/src/main/resources/application.properties
+@@ -1,13 +1,18 @@
+-﻿# URL de conexão: altera "nome_do_seu_banco" para o nome da database criada no PostgreSQL
++spring.application.name=ProjetoBiblioteca
++
++# Banco de dados (PostgreSQL).
++# Podem ser sobrescritos por variáveis de ambiente: SPRING_DATASOURCE_URL,
++# SPRING_DATASOURCE_USERNAME e SPRING_DATASOURCE_PASSWORD (usado no Docker Compose).
+ spring.datasource.url=jdbc:postgresql://localhost:5432/biblioteca
+ spring.datasource.username=postgres
+ spring.datasource.password=postgres
+-spring.datasource.driver-class-name=org.postgresql.Driver
+ 
+-# Configurações do Hibernate / JPA
+-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
++# JPA / Hibernate
+ spring.jpa.hibernate.ddl-auto=update
+-
+-# Mostra as queries SQL executadas no console (útil para estudar/desenvolver)
++spring.jpa.open-in-view=false
+ spring.jpa.show-sql=true
+ spring.jpa.properties.hibernate.format_sql=true
++
++# Paginação padrão
++spring.data.web.pageable.default-page-size=10
++spring.data.web.pageable.max-page-size=50
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..67c1a7d
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,167 @@
++# 📚 Sistema de Gerenciamento de Biblioteca
++
++API REST para gerenciar o acervo e os empréstimos de uma biblioteca, desenvolvida com **Java**, **Spring Boot** e **PostgreSQL**. O projeto foi criado para praticar conceitos de nível intermediário: Spring Data JPA, relacionamentos entre entidades, DTOs, validações, tratamento global de exceções, Stream API, generics e Docker.
++
++> 🚧 **Status:** em desenvolvimento. O back end está completo; o front end e os extras (segurança, testes, Swagger) ainda estão no roadmap.
++
++## ✨ Funcionalidades
++
++- CRUD de **livros**, **autores**, **categorias** e **usuários**
++- Registro de **empréstimos** e **devoluções**
++- Regras de negócio:
++  - cada usuário pode ter no máximo **3 empréstimos ativos**
++  - um livro já emprestado não pode ser emprestado novamente
++  - prazo de **14 dias**, com **multa de R$ 2,00 por dia de atraso**
++  - autor, categoria, usuário e livro com vínculos não podem ser removidos
++- Busca de livros por título (parcial), autor ou categoria
++- Listagem de empréstimos atrasados
++- **Paginação e ordenação** nas listagens
++- **Relatórios** com Stream API (livros mais emprestados, multas por usuário, livros por categoria)
++- Validação dos dados de entrada e respostas de erro padronizadas
++
++## 🛠️ Tecnologias
++
++| Área | Tecnologia |
++|---|---|
++| Linguagem | Java 25 |
++| Framework | Spring Boot 4.1 (Web MVC, Data JPA, Validation) |
++| Banco de dados | PostgreSQL |
++| Build | Maven (com Maven Wrapper) |
++| Containers | Docker e Docker Compose |
++| Outras | Lombok |
++
++## 🧱 Modelo de dados
++
++- Um **autor** tem vários **livros** (`@OneToMany` / `@ManyToOne`)
++- Um **livro** pertence a várias **categorias** e uma categoria tem vários livros (`@ManyToMany`)
++- Um **usuário** faz vários **empréstimos**, e cada empréstimo se refere a um **livro**
++
++## 🗂️ Estrutura do projeto
++
++```
++ProjetoBiblioteca/src/main/java/com/example/ProjetoBiblioteca/
++├── controller/    endpoints REST
++├── service/       regras de negócio (inclui o CrudService genérico)
++├── repository/    acesso ao banco com Spring Data JPA
++├── model/         entidades JPA e enums
++├── dto/           request (entrada) e response (saída)
++├── mapper/        conversão entre entidade e DTO
++└── exception/     exceções customizadas e handler global
++```
++
++## 🚀 Como executar
++
++### Opção 1: tudo no Docker (API + banco)
++
++```bash
++docker compose up --build
++```
++
++A API sobe em `http://localhost:8080`.
++
++### Opção 2: banco no Docker e API pela IDE ou Maven
++
++```bash
++# 1. Suba só o banco
++docker compose up -d db
++
++# 2. Execute a aplicação
++cd ProjetoBiblioteca
++./mvnw spring-boot:run        # Linux/Mac
++.\mvnw spring-boot:run        # Windows (PowerShell)
++```
++
++Se a porta 5432 já estiver ocupada (por exemplo, por um PostgreSQL instalado no computador), use outra porta e ajuste a URL em `application.properties`:
++
++```bash
++DB_PORT=5433 docker compose up -d db      # Linux/Mac
++$env:DB_PORT=5433; docker compose up -d db  # Windows (PowerShell)
++```
++
++### Pré-requisitos
++
++- JDK 25
++- Docker e Docker Compose
++
++### Configuração do banco
++
++As credenciais ficam em `ProjetoBiblioteca/src/main/resources/application.properties` e podem ser sobrescritas com as variáveis `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME` e `SPRING_DATASOURCE_PASSWORD`.
++
++## 🔗 Endpoints
++
++| Recurso | Método e rota | Descrição |
++|---|---|---|
++| Livros | `POST /livros` | Cadastra um livro |
++| | `GET /livros` | Lista com paginação (`?titulo=`, `?autorId=` ou `?categoriaId=`) |
++| | `GET /livros/{id}` | Busca por id |
++| | `PUT /livros/{id}` | Atualiza |
++| | `DELETE /livros/{id}` | Remove |
++| Autores, Categorias e Usuários | `/autores`, `/categorias`, `/usuarios` | Mesmo padrão de CRUD, com filtro `?nome=` na listagem |
++| Empréstimos | `POST /emprestimos` | Registra um empréstimo |
++| | `PUT /emprestimos/{id}/devolucao` | Registra a devolução e calcula a multa |
++| | `GET /emprestimos` | Lista com paginação (`?usuarioId=`) |
++| | `GET /emprestimos/atrasados` | Lista os atrasados |
++| | `GET /emprestimos/{id}` | Busca por id |
++| Relatórios | `GET /relatorios/livros-mais-emprestados` | Top 5 livros mais emprestados |
++| | `GET /relatorios/multas-por-usuario` | Total de multas por usuário |
++| | `GET /relatorios/livros-por-categoria` | Livros agrupados por categoria |
++
++### Exemplos de requisição
++
++```http
++POST /autores
++{ "nome": "Machado de Assis", "nacionalidade": "Brasileira", "dataNascimento": "1839-06-21" }
++
++POST /categorias
++{ "nome": "Romance", "descricao": "Ficção" }
++
++POST /livros
++{ "titulo": "Dom Casmurro", "isbn": "9788535910663", "anoPublicacao": 1899, "autorId": 1, "categoriaIds": [1] }
++
++POST /usuarios
++{ "nome": "Maria Souza", "email": "maria@email.com", "telefone": "11987654321" }
++
++POST /emprestimos
++{ "usuarioId": 1, "livroId": 1 }
++```
++
++### Paginação e ordenação
++
++```
++GET /livros?page=0&size=10&sort=titulo,asc
++GET /livros?titulo=dom
++```
++
++### Formato dos erros
++
++```json
++{
++  "timestamp": "2026-10-19T10:31:00",
++  "status": 400,
++  "erro": "Bad Request",
++  "mensagem": "Dados inválidos",
++  "campos": {
++    "nome": "O nome é obrigatório"
++  }
++}
++```
++
++## 🗺️ Roadmap
++
++- [x] Modelagem das entidades e relacionamentos
++- [x] CRUD completo com DTOs e validações
++- [x] Regras de negócio e tratamento de exceções
++- [x] Consultas personalizadas e relatórios com Stream API
++- [x] Dockerfile (multi-stage) e Docker Compose
++- [ ] Front end simples consumindo a API
++- [ ] Autenticação com Spring Security e JWT (perfis `ADMIN` e `USER`)
++- [ ] Testes unitários (JUnit 5 e Mockito) e de integração (Testcontainers)
++- [ ] Documentação com Swagger/OpenAPI
++- [ ] Migrations com Flyway
++- [ ] Cache nos relatórios
++
++## 👤 Autor
++
++Desenvolvido por **Cauan Barcelos** como projeto de estudo.
++
++- GitHub: [@cauabbarcelos](https://github.com/cauabbarcelos)
+diff --git a/docker-compose.yml b/docker-compose.yml
+new file mode 100644
+index 0000000..f7b688f
+--- /dev/null
++++ b/docker-compose.yml
+@@ -0,0 +1,35 @@
++services:
++  db:
++    image: postgres:16
++    container_name: biblioteca-db
++    environment:
++      POSTGRES_DB: biblioteca
++      POSTGRES_USER: postgres
++      POSTGRES_PASSWORD: postgres
++    ports:
++      # Se a porta 5432 já estiver em uso (PostgreSQL instalado no Windows),
++      # use outra: DB_PORT=5433 docker compose up -d db
++      - "${DB_PORT:-5432}:5432"
++    volumes:
++      - biblioteca-data:/var/lib/postgresql/data
++    healthcheck:
++      test: ["CMD-SHELL", "pg_isready -U postgres -d biblioteca"]
++      interval: 5s
++      timeout: 5s
++      retries: 10
++
++  app:
++    build: ./ProjetoBiblioteca
++    container_name: biblioteca-app
++    depends_on:
++      db:
++        condition: service_healthy
++    environment:
++      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/biblioteca
++      SPRING_DATASOURCE_USERNAME: postgres
++      SPRING_DATASOURCE_PASSWORD: postgres
++    ports:
++      - "8080:8080"
++
++volumes:
++  biblioteca-data:
