@@ -17,7 +17,7 @@ public interface EmprestimoRepository extends JpaRepository<Emprestimo, Long> {
     long countByUsuarioIdAndStatus(Long usuarioId, StatusEmprestimo status);
 
     // Para saber se um livro está emprestado agora
-    boolean existsByLivroIdAndStatus(Long livroId, StatusEmprestimo status);
+    boolean existsByLivroIdAndStatus();
 
     // Para impedir remover um usuário que tem empréstimos
     boolean existsByUsuarioId(Long usuarioId);

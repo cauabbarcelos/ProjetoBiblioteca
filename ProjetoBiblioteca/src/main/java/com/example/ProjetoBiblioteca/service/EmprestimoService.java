@@ -33,11 +33,10 @@ public class EmprestimoService{
      @Transactional
 
     public EmprestimoResponse registrar(EmprestimoRequest request){
-        Usuario usuario = buscarUsuario(request.usuarioId());
-        Livro livro = buscarLivro(request.livroId());
+         Usuario usuario =
 
-        validarLimiteDeEmprestimos(usuario);
-        validarLivroDisponivel(livro);
+
+         emprestimoRepository.existsByLivroIdAndStatus();
 
          LocalDate hoje = LocalDate.now();
 
@@ -46,7 +45,7 @@ public class EmprestimoService{
          emprestimo.setLivro(livro);
          emprestimo.setDataEmprestimo(hoje);
          emprestimo.setDataPrevistaDevolucao(hoje.plusDays(PRAZO_EM_DIAS));
-         emprestimo.setStatus(StatusEmprestimo.ATIVO);
+
 
          livro.setDisponivel(false);
 
