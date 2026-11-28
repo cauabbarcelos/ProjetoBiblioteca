@@ -12,11 +12,11 @@ import java.util.Optional;
 public interface CategoriaRepository extends JpaRepository<Categoria,Integer> {
 
     // Busca parcial pelo nome
-    Page<Categoria> findByNomeContainingIgnoreCase(String nome, Pageable pageable);
+    Page<Categoria> findByNomeContainingIgnoreCase(String name, Pageable pageable);
 
     // Busca exata pelo nome
-    Optional<Categoria> findByNomeIgnoreCase(String nome);
+    Optional<Categoria> findByNomeIgnoreCase(String name);
 
     // Para impedir "Romance" e "romance" como categorias diferentes
-    boolean existsByNomeIgnoreCase(String nome);
+    boolean existsByNomeIgnoreCase(String name);
 }

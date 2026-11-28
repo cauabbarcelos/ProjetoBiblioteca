@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public record  AutorResponse(
         Long id,
-        String name,
+        String nome,
         String nacionalidade,
         LocalDate dataNascimento) {
 }

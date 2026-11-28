@@ -24,7 +24,7 @@ public abstract class CrudService<T, ID, REQ, RES> {
     }
 
     @Transactional(readOnly = true)
-    public Page<RES> listar(Pageable pageable) {
+    public Page<RES> listar(String name, Pageable pageable) {
         return repository.findAll(pageable).map(this::toResponse);
     }
 

@@ -11,5 +11,5 @@ public record EmprestimoResponse(
         String livroTitulo,
         LocalDate dataEmprestimo,
         LocalDate dataPrevistaDevolucao,
-        BigDecimal multa) {
+        LocalDate dataDevolucao, com.example.ProjetoBiblioteca.model.enums.StatusEmprestimo status, BigDecimal multa) {
 }

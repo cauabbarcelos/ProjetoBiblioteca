@@ -9,6 +9,7 @@ import com.example.ProjetoBiblioteca.repository.EmprestimoRepository;
 import com.example.ProjetoBiblioteca.repository.UsuarioRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,12 +20,10 @@ public class UsuarioService extends CrudService<Usuario, Long, UsuarioRequest, U
     private final EmprestimoRepository emprestimoRepository;
     private final UsuarioMapper mapper;
 
-    public UsuarioService(UsuarioRepository usuarioRepository,
-                          EmprestimoRepository emprestimoRepository,
-                          UsuarioMapper mapper) {
-        super(usuarioRepository);
-        this.usuarioRepository = usuarioRepository;
+    public UsuarioService(JpaRepository<Usuario, Long> repository, EmprestimoRepository emprestimoRepository, UsuarioRepository usuarioRepository, UsuarioMapper mapper) {
+        super(repository);
         this.emprestimoRepository = emprestimoRepository;
+        this.usuarioRepository = usuarioRepository;
         this.mapper = mapper;
     }
 
@@ -72,7 +71,7 @@ public class UsuarioService extends CrudService<Usuario, Long, UsuarioRequest, U
     @Transactional(readOnly = true)
     public Page<UsuarioResponse> listar(String nome, Pageable pageable) {
         if (nome == null || nome.isBlank()) {
-            return listar(pageable);
+            return listar(nome, pageable);
         }
         return usuarioRepository.findByNomeContainingIgnoreCase(nome, pageable)
                 .map(this::toResponse);

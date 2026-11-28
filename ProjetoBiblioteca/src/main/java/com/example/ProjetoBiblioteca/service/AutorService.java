@@ -4,14 +4,16 @@ import com.example.ProjetoBiblioteca.dto.request.AutorRequest;
 import com.example.ProjetoBiblioteca.dto.response.AutorResponse;
 import com.example.ProjetoBiblioteca.model.Autor;
 import com.example.ProjetoBiblioteca.repository.AutorRepository;
+import com.example.ProjetoBiblioteca.repository.LivroRepository;
 import jakarta.transaction.Transactional;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 @Service
 @Transactional
 public class AutorService extends CrudService<Autor, Long, AutorRequest, AutorResponse> {
 
-    public AutorService(AutorRepository repository) {
+    public AutorService(JpaRepository<Autor, Long> repository) {
         super(repository);
     }
 

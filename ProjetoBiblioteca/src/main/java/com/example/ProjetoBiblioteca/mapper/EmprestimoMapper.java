@@ -9,7 +9,6 @@ public class EmprestimoMapper {
 
     public EmprestimoResponse toResponse(Emprestimo emprestimo) {
         return new EmprestimoResponse(
-
                 emprestimo.getId(),
                 emprestimo.getUsuario().getId(),
                 emprestimo.getUsuario().getNome(),
@@ -17,6 +16,8 @@ public class EmprestimoMapper {
                 emprestimo.getLivro().getTitulo(),
                 emprestimo.getDataEmprestimo(),
                 emprestimo.getDataPrevistaDevolucao(),
+                emprestimo.getDataDevolucao(),
+                emprestimo.getStatus(),
                 emprestimo.getMulta());
     }
 }

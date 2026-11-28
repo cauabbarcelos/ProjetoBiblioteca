@@ -1,4 +1,6 @@
 package com.example.ProjetoBiblioteca.model;
+
+import com.example.ProjetoBiblioteca.model.enums.StatusEmprestimo;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -6,11 +8,11 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+
 @Entity
+@Getter
 @Setter
 @NoArgsConstructor
-@Getter
-
 public class Emprestimo {
 
     @Id
@@ -18,11 +20,11 @@ public class Emprestimo {
     private Long id;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "usuario_id" , nullable = false)
+    @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "livro_id" , nullable = false )
+    @JoinColumn(name = "livro_id", nullable = false)
     private Livro livro;
 
     @Column(nullable = false)
@@ -31,12 +33,14 @@ public class Emprestimo {
     @Column(nullable = false)
     private LocalDate dataPrevistaDevolucao;
 
-    // DIAS DE ATRASO X VALOR POR DIA
+    // Fica nula até o livro ser devolvido
+    private LocalDate dataDevolucao;
 
-    @Column(precision = 10, scale = 2 )
-    private BigDecimal multa =  BigDecimal.ZERO;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private StatusEmprestimo status = StatusEmprestimo.ATIVO;
 
-
-
-
+    // dias de atraso x valor por dia
+    @Column(precision = 10, scale = 2)
+    private BigDecimal multa = BigDecimal.ZERO;
 }
